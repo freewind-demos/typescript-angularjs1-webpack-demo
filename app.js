@@ -1,7 +1,8 @@
 const app = angular.module('app', []);
 app.directive('hello', function () {
     return {
-        restrict: 'EAC',
-        template: "Hello, Directive"
+        restrict: 'M',
+        template: "<span>Hello, Directive</span>",
+        replace: true
     }
 });
