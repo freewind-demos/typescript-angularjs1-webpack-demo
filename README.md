@@ -1,7 +1,8 @@
-AngularJS1 Directive Restrict Value `M` Demo
-============================================
+AngularJS1 Directive Compile Demo
+=================================
 
-Define a directive with restrict value `M`, in [AngularJS1](https://angularjs.org/).
+In [AngularJS1](https://angularjs.org/), directive's `compile` function gives us a way to get the compiled element and attributes,
+allow us to interact with DOM.
 
 ```
 npm install

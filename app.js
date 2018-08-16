@@ -1,8 +1,12 @@
 const app = angular.module('app', []);
-app.directive('hello', function () {
+app.directive('bgColor', function () {
     return {
-        restrict: 'M',
-        template: "<span>Hello, Directive</span>",
-        replace: true
+        restrict: 'A',
+        compile: function (tElement, tAttributes) {
+            console.log("-------------- compile --------------");
+            console.dir(tElement);
+            console.dir(tAttributes);
+            tElement.css("background-color", "red")
+        }
     }
 });
