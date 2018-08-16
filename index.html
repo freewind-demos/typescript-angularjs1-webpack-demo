@@ -1,12 +1,16 @@
 <html>
 <head>
-    <script src="./node_modules/angular/angular.js"></script>
 </head>
-<body>
-<div ng-app>
-    <input type="text" ng-model="yourName" placeholder="type your name here"/>
-    <hr>
-    Hello, {{yourName}}!
+<body ng-app="app">
+<div>
+    <div ng-controller="HelloController">
+        <label>Name</label>
+        <input type="text" ng-model="userName"/>
+        <button ng-click="sayHello()">Say Hi!</button>
+        <div ng-show="showHelloWords">Hi, {{userName}}!</div>
+    </div>
 </div>
+<script src="./node_modules/angular/angular.js"></script>
+<script src="./app.js"></script>
 </body>
 </html>
