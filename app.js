@@ -1,8 +1,10 @@
 const app = angular.module('app', []);
-app.controller('HelloController', function ($scope) {
-    $scope.userName = "AngularJs1";
-    $scope.showHelloWords = false;
-    $scope.sayHello = function () {
-        this.showHelloWords = true
+app.directive('backgroundColor', function () {
+    return {
+        restrict: 'A',
+        controller: function ($scope, $element, $attrs) {
+            const color = $attrs.backgroundColor;
+            $element.css("background-color", color);
+        }
     }
 });
