@@ -1,9 +1,7 @@
-const app = angular.module('app', []);
-app.directive('bgColor', function () {
+const app = angular.module('app', [])
+app.directive('myDirective', function () {
     return {
-        restrict: 'A',
-        link: function (scope, element, attrs) {
-            element.css("background-color", attrs.bgColor)
-        }
+        template: '<div>Good! Template from directive</div>',
+        restrict: 'A'
     }
-});
+})
