@@ -1,7 +1,7 @@
 AngularJS1 Directive Template Demo
 ==================================
 
-Directive template will replace the DOM defined in HTML.
+Directive template will replace the **inner** DOM defined in HTML.
 
 ```
 npm install
