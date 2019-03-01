@@ -3,7 +3,7 @@
     "demo": "webpack-serve --open"
   },
   "dependencies": {
-    "angular": "^1.7.3"
+    "angular": "1.7.7"
   },
   "devDependencies": {
     "@babel/core": "7.2.2",
