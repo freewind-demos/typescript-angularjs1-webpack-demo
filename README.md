@@ -1,7 +1,7 @@
-AngularJS1 Directive Template Controller Demo
-=============================================
+TypeScript AngularJS1 Webpack Demo
+==================================
 
 ```
 npm install
-open index.html
+npm run demo
 ```
